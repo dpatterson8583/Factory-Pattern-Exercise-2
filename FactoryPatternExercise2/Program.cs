@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var connection = DataAccessFactory.GetDataAccess("list");
+
+            var connection2 = DataAccessFactory.GetDataAccess("sql");
+
+            var connection3 = DataAccessFactory.GetDataAccess("mongo");
         }
     }
 }
